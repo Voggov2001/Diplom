@@ -1,0 +1,26 @@
+bot:
+  name: MixFilms_bot
+  token: 5609873091:AAH2G6pDHNfKhXixQUYNxYx7NenGNm44oJc
+API:
+  token: ce25666c-fbd9-45cb-8466-071170dad302
+server:
+  port: 8080
+feign:
+  httpclient:
+    enabled: true
+  okhttp:
+    enabled: true
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/films
+    username: postgres
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
